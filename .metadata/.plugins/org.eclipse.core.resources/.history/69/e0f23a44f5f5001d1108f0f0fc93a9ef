@@ -1,0 +1,20 @@
+package com.yash;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Cab {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String dname;
+	private String type;
+	private int cost;
+	private long phone;
+	private List<Person> persons;
+}

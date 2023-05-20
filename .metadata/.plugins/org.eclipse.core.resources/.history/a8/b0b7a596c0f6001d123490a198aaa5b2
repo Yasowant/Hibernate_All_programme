@@ -1,0 +1,10 @@
+package com.yash;
+
+public class Hospital {
+	private int id;
+	private String name;
+	private String website;
+	private String loc;
+	private int noBranches;
+
+}

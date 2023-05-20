@@ -1,0 +1,73 @@
+package com.manytomany;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class TestSave {
+
+	public static void main(String[] args) {
+		EntityManagerFactory entityManagerFactory =Persistence.createEntityManagerFactory("vikas");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		
+		Student student=new Student();
+		student.setName("Yasowant");
+		student.setAge(25);
+		student.setGender("male");
+		student.setMarks(95.36);
+		Student student1=new Student();
+		student1.setName("Mayank");
+		student1.setAge(25);
+		student1.setGender("male");
+		student1.setMarks(92.38);
+		
+		
+		
+		
+		Course course=new Course();
+		
+		
+		
+		
+		Course course1=new Course();
+		
+		
+		
+		
+		
+		Course course2=new Course();
+		
+		
+		
+		
+		
+		
+		Course course3=new Course();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		entityTransaction.begin();
+		entityTransaction.commit();
+
+	}
+
+}

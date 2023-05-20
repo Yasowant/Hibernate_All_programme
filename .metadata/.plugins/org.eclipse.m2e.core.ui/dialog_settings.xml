@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Hibernate_N\onetoone\pom.xml"/>
+			<item value="C:\Hibernate_N\Manytoone\src\main\java\com\yash\TestSave.java"/>
+			<item value="C:\Hibernate_N\sample_project\src\main\java\sample\sample_project\App.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.yash"/>
+			<item value="manytoone"/>
+			<item value="com.jsp"/>
+			<item value="base"/>
+			<item value="oneTomany"/>
+			<item value="OnetoOne"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="OnetoOneBi"/>
+			<item value="ImageInsert"/>
+			<item value="Cascade"/>
+			<item value="MANYTOMANYBI"/>
+			<item value="onetomanydir"/>
+			<item value="Onetomanybidir"/>
+			<item value="manytomany"/>
+			<item value="Manytoone"/>
+			<item value="com.yash"/>
+			<item value="One_to_many"/>
+			<item value="One_To_Many"/>
+			<item value="ONETOONEPAN"/>
+			<item value="MYCUSTOMER"/>
+			<item value="MYSTUDENT"/>
+			<item value="MYPERSON"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

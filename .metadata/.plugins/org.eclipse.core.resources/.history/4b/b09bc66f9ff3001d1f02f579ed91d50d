@@ -1,0 +1,68 @@
+package com.yash;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class TestSave {
+
+	public static void main(String[] args) {
+		EntityManagerFactory entityManagerFactory =Persistence.createEntityManagerFactory("vikas");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		
+		State state=new State();
+		state.setName("Odisha");
+		state.setCapital("BBSR");
+		state.setLang("Odia");
+		state.setCm("Nabin Pattanaik");
+		
+		State state1=new State();
+		state1.setName("Karnataka");
+		state1.setCapital("Bangaluru");
+		state1.setLang("Kannda");
+		state1.setCm("shivkumar");
+		
+		State state3=new State();
+		state3.setName("Alabama");
+		state3.setCapital("Montgomery");
+		state3.setLang("English");
+		state3.setCm("Joe Biden");
+		
+		State state4=new State();
+		state4.setName("Arizona");
+		state4.setCapital("	Phoenix");
+		state4.setLang("English");
+		state4.setCm("Joe Biden");
+		
+		Country country=new Country();
+		country.setName("India");
+		country.setCapital("Delhi");
+		country.setPm("Modhi");
+		
+		Country country1=new Country();
+		country.setName("Usa");
+		country.setCapital("Washington D.c");
+		country.setPm("Joe Biden");
+		
+		state.setCountry(country);
+		state.setCountry(country);
+		state.setCountry(country1);
+		state.setCountry(country1);
+		
+		entityTransaction.begin();
+		entityManager.persist(country);
+		entityManager.persist(state);
+		entityManager.persist(state1);
+		entityManager.persist(country1);
+		entityManager.persist(state3);
+		entityManager.persist(state4);
+		
+		
+		entityTransaction.commit();
+		
+
+	}
+
+}

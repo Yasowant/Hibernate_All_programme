@@ -1,0 +1,32 @@
+package com.yash;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class TestMainSave {
+
+	public static void main(String[] args) {
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("vikas");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+		EntityTransaction entityTransaction = entityManager.getTransaction();
+		
+		Hospital hospital=new Hospital();
+		hospital.setName("Appollo");
+		hospital.setWebsite("www.appollo.com");
+		hospital.setLoc("near Metro");
+		hospital.setNoBranches(50);
+		
+		Hospital hospital1=new Hospital();
+		hospital1.setName("jaydev");
+		hospital1.setWebsite("www.jaydev.com");
+		hospital1.setLoc("near busstop");
+		hospital1.setNoBranches(80);
+
+
+		
+
+	}
+
+}
